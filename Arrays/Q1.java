@@ -1,10 +1,10 @@
 package Arrays;
 
 public class Q1 {
-    static int[] method(int[] arr){
-        int[] ans= new int[arr.length];
-        for (int i = 0; i < arr.length; i++) {
-            ans[i]=arr[arr[i]];
+    static int[] method(int[] nums){
+        int[] ans= new int[nums.length];
+        for (int i = 0; i < nums.length; i++) {
+            ans[i]=nums[nums[i]];
         }
         return ans;
 
