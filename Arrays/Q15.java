@@ -4,13 +4,20 @@ import java.util.Arrays;
 
 public class Q15 {
     public static int[] plusOne(int[] digits) {
-        for (int i = digits.length; i >0 ; i++) {
-            
+        for (int i = (digits.length)-1; i >=0 ; i--){
+            if (digits[i]<9) {
+                digits[i]++;
+                return digits;
+            }          
+            digits[i]=0;
         }
-        return digits;
+        int[] arr=new int[digits.length+1];
+        arr[0]=1;
+
+        return arr;
     }
     public static void main(String[] args) {
-        int[] arr={4,3,2,1};
-        System.out.println(Arrays.toString(arr));
+        int[] arr={8,9,9};
+        System.out.println(Arrays.toString(plusOne(arr)));
     }
 }
