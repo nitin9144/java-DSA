@@ -1,7 +1,7 @@
 package BinarySearch_Lecture_Question;
 
 public class Ceiling_of_number {
-    public static char Ceiling(char[] arr,char target) {
+    public static int Ceiling(int[] arr,int target) {
         int low=0;
         int high=arr.length-1;
         while(low<=high){
@@ -13,14 +13,13 @@ public class Ceiling_of_number {
                 high=mid-1;
             }
             else{
-                return arr[mid];
-                // continue;
+                return mid;
             }
         }
         return arr[low];
         }
     public static void main(String[] args) {
-        char[] arr={'c','f','j'};
-        System.out.println(Ceiling(arr,'g'));
+        int[] arr={3,3,5,7};
+        System.out.println(Ceiling(arr,-1));
     }
 }
