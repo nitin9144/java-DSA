@@ -16,7 +16,7 @@ public class Peakindex_in_mountain {
         }
         return low;
     }
-
+    
     public static void main(String[] args) {
         int[] arr = {0, 2,3,4,5, 1, 0};
         int ans = peakIndexInMountainArray(arr);
