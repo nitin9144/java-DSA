@@ -3,6 +3,9 @@ package BinarySearch_Lecture_Question;
 public class RotationCount_in_SortedArray {
 
     public static int rotation_count(int[] nums) {
+        if(nums[0]<nums[nums.length-1]){
+            return 0;
+        }
         int peak=peak(nums);
         
         return peak+1;
