@@ -27,7 +27,7 @@ public class CyclicSort {
         // for (int i = 0; i < arr.length-1; i++) {
         int i = 0;
         while (i < arr.length) {
-            int correct = arr[i] - 1;
+            int correct = arr[i] - 1; // is 0 is in the array then correct_index=arr[i];
             if (arr[i] != arr[correct]) {
                 swap(arr, i, correct);
             } else {
