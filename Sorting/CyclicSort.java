@@ -9,7 +9,7 @@ public class CyclicSort {
         arr[a] = arr[b];
         arr[b] = temp;
     }
-
+    // this one can't handle duplicates
     // public static void CyclicSort(int[] arr) {
     //     // for (int i = 0; i < arr.length-1; i++) {
     //     int i = 0;
@@ -24,7 +24,6 @@ public class CyclicSort {
     // }
 
     public static void CyclicSort(int[] arr) {
-        // for (int i = 0; i < arr.length-1; i++) {
         int i = 0;
         while (i < arr.length) {
             int correct = arr[i] - 1; // is 0 is in the array then correct_index=arr[i];
