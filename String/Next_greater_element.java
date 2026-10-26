@@ -24,6 +24,7 @@ public class Next_greater_element {
         for (int i = 0; i < str.length(); i++) {
             arr[i] = str.charAt(i) - '0';
         }
+        
         System.out.println(Arrays.toString(arr));
     }
 }
